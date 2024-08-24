@@ -10,7 +10,7 @@ export default defineConfig({
 				github: 'https://github.com/bynatejones/ACvault',
 			},
             editLink: {
-                baseUrl: 'https://github.com/bynatejones/ACvault/edit/acvault',
+                baseUrl: 'https://github.com/bynatejones/ACvault/edit/dev',
             },
 			sidebar: [
                 {
@@ -26,8 +26,13 @@ export default defineConfig({
 					autogenerate: { directory: 'reference' },
 				},
                 {
-					label: 'Follow Focus',
-					autogenerate: { directory: 'follow-focus' },
+					label: 'Focus Iris Zoom [FIZ]',
+                    items: [
+						// Each item here is one entry in the navigation menu.
+                        { label: 'What is FIZ?', slug: 'fiz/introduction' },
+						{ label: 'Arri Hi-5', slug: 'fiz/arri-hi-5' },
+                        { label: 'Tilta Nucleus-M', slug: 'fiz/tilta-nucleus-m' },
+					],
 				},
 			],
 		}),
