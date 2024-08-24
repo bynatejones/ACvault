@@ -1,3 +1,7 @@
 h1 {
     font-size: 3.5rem;
 }
+
+article {
+    border-radius: 0.5rem;
+}
