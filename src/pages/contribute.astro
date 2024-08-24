@@ -1,0 +1,12 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import '../styles/contribute.css';
+---
+
+<StarlightPage frontmatter={{ title: 'Contribute', template: 'splash'}}>
+    <h5>Want to add a new page to this vault? Or maybe edit an existing page? Fill out this form and we'll make the changes.</h5>
+    <hr/>
+    <span style="border-radius: 16px; height: 1000px;">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe-R9S4NOzWDgQrehEf6uds1gkoHuyLOZBxLhH7ktLFxZefOg/viewform?embedded=true" width="100%" height="100%">Loading Form…</iframe>
+    </span>
+</StarlightPage>

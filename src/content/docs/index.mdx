@@ -1,18 +1,19 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: AC Vault
+description: ACVault.org | Resources and information for camera assistants and other crew.
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  title: Welcome to the AC Vault
+  tagline: Dive into all the free resources available to camera assistants!
   image:
     file: ../../assets/houston.webp
   actions:
-    - text: Example Guide
+    - text: Access the Vault
+      link: /introduction/introduction/
+      icon: external
+    - text: Complete Beginner's Guide
       link: /guides/example/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
       variant: minimal
 ---
 
@@ -23,6 +24,7 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 <CardGrid stagger>
 	<Card title="Update content" icon="pencil">
 		Edit `src/content/docs/index.mdx` to see this page change.
+        Contribute [here](/contribute/)
 	</Card>
 	<Card title="Add new content" icon="add-document">
 		Add Markdown or MDX files to `src/content/docs` to create new pages.
