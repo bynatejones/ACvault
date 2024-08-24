@@ -17,6 +17,7 @@ export default defineConfig({
             ],
 			social: {
 				github: 'https://github.com/bynatejones/ACvault',
+                discord: 'https://discord.gg/zcE8GnJgpq',
 			},
             editLink: {
                 baseUrl: 'https://github.com/bynatejones/ACvault/edit/dev',
@@ -26,6 +27,7 @@ export default defineConfig({
 					label: 'Introduction',
 					items: [
                         { label: 'What is the AC Vault?', slug: 'introduction/introduction' },
+                        { label: 'Access the Vault Offline', slug: 'introduction/offline-use' },
                         { label: 'How to Contribute', slug: 'introduction/contribute' },
                     ]
 				},

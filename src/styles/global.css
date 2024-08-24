@@ -19,6 +19,12 @@
 	--sl-color-black: #17181c;
     --sl-color-bg-nav: #17181c;
 }
+
+/* mobile menu icon bg color */
+starlight-menu-button button {
+    background-color: #c0c2c7;
+}
+
 /* Light mode colors. */
 :root[data-theme='light'] {
 	--sl-color-accent-low: #c2e2b6;
@@ -33,4 +39,13 @@
 	--sl-color-gray-6: #eceef2;
 	--sl-color-gray-7: #f5f6f8;
 	--sl-color-black: #ffffff;
+}
+
+
+.sl-flex.astro-kmkmnagf {
+    justify-content: center;
+}
+
+.sl-flex.astro-kmkmnagf site-search button {
+    max-width: 750px;
 }
