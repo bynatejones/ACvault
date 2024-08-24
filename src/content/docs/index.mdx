@@ -4,9 +4,9 @@ description: ACVault.org | Resources and information for camera assistants and o
 template: splash
 hero:
   title: Welcome to the AC Vault
-  tagline: Dive into all the free resources available to camera assistants!
+  tagline: A free resource available to camera assistants
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/homepage/acvault-logo-01-1.png
   actions:
     - text: Access the Vault
       link: /introduction/introduction/
@@ -18,11 +18,12 @@ hero:
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
+import GlobalCSS from './src/styles/home.css';
 
-## Next steps
-
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
+## Dive right in
+<hr/>
+<CardGrid>
+	<Card title="" icon="pencil">
 		Edit `src/content/docs/index.mdx` to see this page change.
         Contribute [here](/contribute/)
 	</Card>

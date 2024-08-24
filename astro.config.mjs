@@ -6,6 +6,14 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'AC Vault',
+            logo: {
+                src: './src/assets/homepage/acvault-logo-01-horizontal-02.png',
+                replacesTitle: true,
+            },
+            customCss: [
+                // Relative path to your custom CSS file
+                './src/styles/global.css',
+            ],
 			social: {
 				github: 'https://github.com/bynatejones/ACvault',
 			},
@@ -15,7 +23,10 @@ export default defineConfig({
 			sidebar: [
                 {
 					label: 'Introduction',
-					autogenerate: { directory: 'introduction' },
+					items: [
+                        { label: 'What is the AC Vault?', slug: 'introduction/introduction' },
+                        { label: 'How to Contribute', slug: 'introduction/contribute' },
+                    ]
 				},
 				{
 					label: 'Guides',
@@ -33,6 +44,14 @@ export default defineConfig({
 						{ label: 'Arri Hi-5', slug: 'fiz/arri-hi-5' },
                         { label: 'Tilta Nucleus-M', slug: 'fiz/tilta-nucleus-m' },
 					],
+				},
+                {
+					label: 'Downloadable Resources',
+                    autogenerate: { directory: 'files' }
+				},
+                {
+					label: 'ICG Local 600',
+                    autogenerate: { directory: 'local-600' }
 				},
 			],
 		}),
