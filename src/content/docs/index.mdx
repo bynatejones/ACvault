@@ -4,35 +4,41 @@ description: ACVault.org | Resources and information for camera assistants and o
 template: splash
 hero:
   title: Welcome to the AC Vault
-  tagline: Dive into all the free resources available to camera assistants!
+  tagline: A free resource available to camera assistants
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/homepage/acvault-logo-01-1.png
   actions:
     - text: Access the Vault
       link: /introduction/introduction/
-      icon: external
-    - text: Complete Beginner's Guide
-      link: /guides/example/
       icon: right-arrow
+    - text: Learn how to contribute
+      link: /contribute/
+      icon: external
       variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
+import GlobalCSS from './src/styles/home.css';
 
-## Next steps
-
+## Dive right in
+<hr/>
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-        Contribute [here](/contribute/)
+	<Card title="Camera Prep Checklist" icon="seti:wgt">
+		[Check out the Camera Prep Checklist for a smoother prep!](/files/checklists/#camera-prep)
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	<Card title="Focus Iris Zoom" icon="laptop">
+		[Learn everything you need to know about every major FIZ.](/fiz/introduction)
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
+	<Card title="A Beginner's Guide" icon="open-book">
+		[New to this? Let's learn some fundamentals.](/guides/example)
 	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="Join the Union" icon="rocket">
+		[Joining Local 600 made simple...er](/local-600/join-union)
+	</Card>
+    <Card title="All the Manuals" icon="information">
+		[Download every manual for emergencies.](/files/manuals)
+	</Card>
+    <Card title="Join the Discord" icon="discord">
+		[Join the AC Friends Discord and get community support!](https://discord.gg/zcE8GnJgpq)
 	</Card>
 </CardGrid>
