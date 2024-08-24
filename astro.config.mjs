@@ -7,7 +7,8 @@ export default defineConfig({
 		starlight({
 			title: 'AC Vault',
             logo: {
-                src: './src/assets/homepage/acvault-logo-01-horizontal-02.png',
+                light: './src/assets/homepage/acvault-logo-01-horizontal-02-light.png',
+                dark: './src/assets/homepage/acvault-logo-01-horizontal-02.png',
                 replacesTitle: true,
             },
             customCss: [
