@@ -20,6 +20,15 @@
     --sl-color-bg-nav: #17181c;
 }
 
+body {
+    background: rgb(23,24,28);
+    background: linear-gradient(180deg, rgba(23,24,28,1) 0%, rgba(30,31,36,1) 50%, rgba(35,37,43,1) 100%);
+}
+
+#starlight__sidebar {
+    background: rgb(23,24,28);
+    background: linear-gradient(180deg, rgba(23,24,28,1) 0%, rgba(30,31,36,1) 70%, rgba(35,37,43,1) 100%);
+}
 
 /* mobile menu icon bg color */
 starlight-menu-button button {
