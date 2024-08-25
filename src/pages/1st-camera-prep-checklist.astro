@@ -58,7 +58,7 @@ import { LinkCard, CardGrid, Aside } from '@astrojs/starlight/components';
                 <hr class="hr-group"/>
                 <input id="lens-light-cables" class="cables" type="checkbox"> Cables</input>
                 <hr/>
-                <input id="mount-prime" type="checkbox"> Mount Lens</input>
+                <input id="mount-prime" type="checkbox"> Mount Any Lens</input>
                 <hr/>
                 <input id="mattebox" type="checkbox"> Mattebox</input>
                 <hr/>
@@ -142,16 +142,17 @@ import { LinkCard, CardGrid, Aside } from '@astrojs/starlight/components';
                 <input id="check-lens-color" type="checkbox"> Match Lens Color with WB</input>
                 <hr/>
                 <input id="build-carts" type="checkbox"> Build and Load Carts</input>
-                <hr/>
             </div>
             <div class="prep-form-section">
                 <h4 class="prep-section-title">5. Get Lunch!</h4>
-                <p>...if you haven't already</p>
+                <p style="color: #3be433;">...if you haven't already</p>
                 <hr style="margin-top: 12px; margin-bottom: 12px;"/>
                 <input id="gear-pickup" type="checkbox"> Coordinate with production to pickup gear</input>
                 <hr/>
                 <input id="contact-dp" type="checkbox"> Let the DP know how prep went</input>
                 <hr/>
+                <p>Prep Notes</p>
+                <textarea id="prep-notes" style="min-height: 150px;"></textarea>
             </div>
         </div>
     </form>
