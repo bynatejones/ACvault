@@ -1,0 +1,17 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import '../styles/global.css';
+import '../styles/forms.css';
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+---
+
+<StarlightPage frontmatter={{ title: '2nd AC Camera Prep Checklist', template: 'splash'}}>
+    <p>A beginning-to-end checklist for a 2nd AC's camera prep</p>
+    <CardGrid>
+        <LinkCard title="1st AC Camera Prep Checklist" description="Are you a 1st AC looking for your prep checklist? Click here." href="/1st-camera-prep-checklist/" target="_blank"/>
+    </CardGrid>
+    <hr/>
+    <form autocomplete="on">
+        <input id="map-lenses" type="checkbox"> Map Lenses</input>
+    </form>
+</StarlightPage>
