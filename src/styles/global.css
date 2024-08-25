@@ -15,7 +15,7 @@
 	--sl-color-gray-3: #888b96;
 	--sl-color-gray-4: #545861;
 	--sl-color-gray-5: #353841;
-	--sl-color-gray-6: #24272f;
+	--sl-color-gray-6: #17181c;
 	--sl-color-black: #17181c;
     --sl-color-bg-nav: #17181c;
 }
@@ -39,11 +39,6 @@ starlight-menu-button button {
 	--sl-color-gray-6: #eceef2;
 	--sl-color-gray-7: #f5f6f8;
 	--sl-color-black: #ffffff;
-}
-
-
-.sl-flex.astro-kmkmnagf {
-    justify-content: center;
 }
 
 .sl-flex.astro-kmkmnagf site-search button {

@@ -31,13 +31,18 @@ export default defineConfig({
                         { label: 'How to Contribute', slug: 'introduction/contribute' },
                     ]
 				},
-				{
-					label: 'Guides',
-					autogenerate: { directory: 'guides' },
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+                {
+					label: 'Downloadable Resources',
+                    items: [
+                        {
+                            label: 'Manuals',
+                            items: [
+                                { label: 'Digital Cameras', slug: 'files/digital-cameras/manuals' },
+                            ]
+                        },
+                        { label: 'Checklists', slug: 'files/checklists' },
+                        { label: 'Templates', slug: 'files/templates' },
+                    ]
 				},
                 {
 					label: 'Focus Iris Zoom [FIZ]',
@@ -47,10 +52,6 @@ export default defineConfig({
 						{ label: 'Arri Hi-5', slug: 'fiz/arri-hi-5' },
                         { label: 'Tilta Nucleus-M', slug: 'fiz/tilta-nucleus-m' },
 					],
-				},
-                {
-					label: 'Downloadable Resources',
-                    autogenerate: { directory: 'files' }
 				},
                 {
 					label: 'ICG Local 600',
