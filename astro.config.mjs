@@ -3,6 +3,7 @@ import starlight from '@astrojs/starlight';
 
 //  https://astro.build/config
 export default defineConfig({
+    site: 'https://www.acvault.org',
 	integrations: [
 		starlight({
 			title: 'AC Vault',
@@ -28,7 +29,7 @@ export default defineConfig({
                 {
 					label: 'Vault Introduction',
 					items: [
-                        { label: 'Let\'s Get Started', slug: 'v/lets-get-started' },
+                        { label: 'Let\'s Get Started', slug: 'v/start' },
                         { label: 'Access the Vault Offline', slug: 'v/offline-use' },
                         { label: 'How to Contribute', slug: 'v/contribute' },
                     ]
