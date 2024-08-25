@@ -18,6 +18,7 @@ export default defineConfig({
 			social: {
 				github: 'https://github.com/bynatejones/ACvault',
                 discord: 'https://discord.gg/zcE8GnJgpq',
+                instagram: 'https://instagram.com/ac_friends_community',
 			},
             editLink: {
                 baseUrl: 'https://github.com/bynatejones/ACvault/edit/dev',

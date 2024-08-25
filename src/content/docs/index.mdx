@@ -8,21 +8,26 @@ hero:
   image:
     file: ../../assets/homepage/acvault-logo-01-1.png
   actions:
-    - text: Access the Vault
+    - text: Open the Vault
       link: /v/welcome/
       icon: right-arrow
-    - text: Learn how to contribute knowledge
+    - text: Learn how to contribute your knowledge
       link: /contribute/
       icon: external
       variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { LinkCard, Card, CardGrid } from '@astrojs/starlight/components';
 import GlobalCSS from './src/styles/home.css';
 
 ## Dive right in
 <hr/>
-<CardGrid stagger>
+<CardGrid>
+  <LinkCard title="1st AC Camera Prep Checklist" description="Web and Print version available" href="/1st-camera-prep-checklist/" target="_blank"/>
+  <LinkCard title="2nd AC Camera Prep Checklist" description="Web and Print version available" href="/2nd-camera-prep-checklist/" target="_blank"/>
+</CardGrid>
+<hr/>
+<CardGrid>
 	<Card title="Camera Prep Checklist" icon="seti:wgt">
 		[Check out the Camera Prep Checklist for a smoother prep!](/files/checklists/#camera-prep)
 	</Card>
