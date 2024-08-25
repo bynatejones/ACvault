@@ -7,7 +7,8 @@ export default defineConfig({
 		starlight({
 			title: 'AC Vault',
             logo: {
-                src: './src/assets/homepage/acvault-logo-01-horizontal-02.png',
+                light: './src/assets/homepage/acvault-logo-01-horizontal-02-light.png',
+                dark: './src/assets/homepage/acvault-logo-01-horizontal-02.png',
                 replacesTitle: true,
             },
             customCss: [
@@ -16,25 +17,38 @@ export default defineConfig({
             ],
 			social: {
 				github: 'https://github.com/bynatejones/ACvault',
+                discord: 'https://discord.gg/zcE8GnJgpq',
+                instagram: 'https://instagram.com/ac_friends_community',
 			},
             editLink: {
                 baseUrl: 'https://github.com/bynatejones/ACvault/edit/dev',
             },
 			sidebar: [
                 {
-					label: 'Introduction',
+					label: 'Vault Introduction',
 					items: [
-                        { label: 'What is the AC Vault?', slug: 'introduction/introduction' },
-                        { label: 'How to Contribute', slug: 'introduction/contribute' },
+                        { label: 'Welcome to the AC Vault!', slug: 'v/welcome' },
+                        { label: 'Access the Vault Offline', slug: 'v/offline-use' },
+                        { label: 'How to Contribute', slug: 'v/contribute' },
                     ]
 				},
-				{
-					label: 'Guides',
-					autogenerate: { directory: 'guides' },
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+                {
+					label: 'Downloadable Resources',
+                    items: [
+                        {
+                            label: 'Manuals',
+                            items: [
+                                { label: 'Digital Cameras', slug: 'files/manuals/digital-cameras' },
+                                { label: 'Film Cameras', slug: 'files/manuals/film-cameras' },
+                                { label: 'FIZ', slug: 'files/manuals/fiz' },
+                                { label: 'Monitors', slug: 'files/manuals/monitors' },
+                                { label: 'Support', slug: 'files/manuals/support' },
+                                { label: 'Accessories', slug: 'files/manuals/accessories' },
+                            ]
+                        },
+                        { label: 'Checklists', slug: 'files/checklists' },
+                        { label: 'Templates', slug: 'files/templates' },
+                    ]
 				},
                 {
 					label: 'Focus Iris Zoom [FIZ]',
@@ -44,10 +58,6 @@ export default defineConfig({
 						{ label: 'Arri Hi-5', slug: 'fiz/arri-hi-5' },
                         { label: 'Tilta Nucleus-M', slug: 'fiz/tilta-nucleus-m' },
 					],
-				},
-                {
-					label: 'Downloadable Resources',
-                    autogenerate: { directory: 'files' }
 				},
                 {
 					label: 'ICG Local 600',
