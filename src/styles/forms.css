@@ -37,6 +37,7 @@ hr {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
     flex: 1;
+    max-width: 540px;
 }
 
 .prep-form-section {
@@ -53,8 +54,31 @@ hr {
     .prep-form {
         display: block
     }
-  }
+}
+
+@media (min-width: 72rem) {
+    .astro-67yu43on {
+        width: 100% !important;
+    }
+    
+}
 
 textarea {
     width: 100%;
+}
+
+.prep-section-title {
+    color: #3be433 !important;
+}
+
+.astro-67yu43on {
+    justify-content: center;
+}
+
+.sl-container.astro-7nkwcw3z {
+    max-width: 100%
+}
+
+aside.right-sidebar-container.astro-67yu43on {
+    display: none;
 }

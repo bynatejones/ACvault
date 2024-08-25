@@ -2,16 +2,157 @@
 import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
 import '../styles/global.css';
 import '../styles/forms.css';
-import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+import { LinkCard, CardGrid, Aside } from '@astrojs/starlight/components';
 ---
 
-<StarlightPage frontmatter={{ title: '2nd AC Camera Prep Checklist', template: 'splash'}}>
-    <p>A beginning-to-end checklist for a 2nd AC's camera prep</p>
+<StarlightPage frontmatter={{ title: '1st AC Camera Prep Checklist', description: 'A beginning-to-end checklist for a 1st AC\'s camera prep', template: 'doc'}}>
+    
     <CardGrid>
+        <div>
+            <h1>2nd AC Camera Prep Checklist</h1>
+            <p>Everything you need to get through the prep successfully</p>
+        </div>
         <LinkCard title="1st AC Camera Prep Checklist" description="Are you a 1st AC looking for your prep checklist? Click here." href="/1st-camera-prep-checklist/" target="_blank"/>
     </CardGrid>
-    <hr/>
-    <form autocomplete="on">
-        <input id="map-lenses" type="checkbox"> Map Lenses</input>
+    <hr style="max-width: 100%; border-top-width: 3px !important;"/>
+    <CardGrid>
+        <Aside type="tip" title="Build Efficiently">Build camera bottom up, front to back</Aside>
+        <Aside type="note" title="Keep in mind">Not all of this gear will be applicable to each project</Aside>
+    </CardGrid>
+    <form autocomplete="on" class="prep-form">
+        <div class="prep-form-column">
+            <div class="prep-form-section">
+                <h4 class="prep-section-title">1. Begin Prep</h4>
+                <hr style="margin-top: 12px; margin-bottom: 12px;"/>
+                <p>What is not on the floor?</p>
+                <textarea id="not-on-floor"></textarea>
+                <hr style="margin-top: 12px; margin-bottom: 12px;"/>
+                <p>When will it be there?</p>
+                <textarea id="when-be-there"></textarea>
+                <hr style="margin-top: 12px; margin-bottom: 12px;"/>
+                <input id="tripod-head" type="checkbox"> Tripod Head / Camera Mount</input>
+                <hr/>
+                <input id="camera-power-plates" type="checkbox"> Camera Power Plates</input>
+                <hr class="hr-group"/>
+                <input id="camera-power-plates-cables" class="cables" type="checkbox"> Cables</input>
+                <hr/>
+                <input id="onboard-monitor" type="checkbox"> Onboard Monitor</input>
+                <hr class="hr-group"/>
+                <input id="onboard-monitor-cables" class="cables" type="checkbox"> Cables</input>
+                <hr/>
+                <input id="wireless-video" type="checkbox"> Wireless Video</input>
+                <hr class="hr-group"/>
+                <input id="wireless-video-cables" class="cables" type="checkbox"> Cables</input>
+                <hr class="hr-group"/>
+                <input id="wireless-video-pair" class="cables" type="checkbox"> Pair TX/RX</input>
+                <hr/>
+                <input id="mdr" type="checkbox"> MDR</input>
+                <hr class="hr-group"/>
+                <input id="mdr-cables" class="cables" type="checkbox"> Cables</input>
+                <hr/>
+                <input id="rangefinder" type="checkbox"> Rangefinder</input>
+                <hr class="hr-group"/>
+                <input id="rangefinder-cables" class="cables" type="checkbox"> Cables</input>
+                <hr/>
+                <input id="lens-light" type="checkbox"> Lens Light</input>
+                <hr class="hr-group"/>
+                <input id="lens-light-cables" class="cables" type="checkbox"> Cables</input>
+                <hr/>
+                <input id="mount-prime" type="checkbox"> Mount Lens</input>
+                <hr/>
+                <input id="mattebox" type="checkbox"> Mattebox</input>
+                <hr/>
+                <input id="fiz-motors" type="checkbox"> FIZ Motors / Manual FF</input>
+                <hr class="hr-group"/>
+                <input id="fiz-motors-cables" class="cables" type="checkbox"> Cables</input>
+                <hr/>
+                <input id="handheld" type="checkbox"> Handheld Setup</input>
+            </div>
+        </div>
+        <div class="prep-form-column">
+            <div class="prep-form-section">
+                <h4 class="prep-section-title">2. Camera Settings</h4>
+                <hr style="margin-top: 12px; margin-bottom: 12px;"/>
+                <input id="primary-settings" type="checkbox"> Primary Settings</input>
+                <hr class="hr-group"/>
+                <input id="settings-letter" class="cables" type="checkbox"> Camera Letter</input>
+                <hr class="hr-group"/>
+                <input id="settings-codec" class="cables" type="checkbox"> Codec</input>
+                <hr class="hr-group"/>
+                <input id="settings-fps" class="cables" type="checkbox"> Project FPS</input>
+                <hr class="hr-group"/>
+                <input id="settings-resolution" class="cables" type="checkbox"> Resolution</input>
+                <hr class="hr-group"/>
+                <input id="settings-color-space" class="cables" type="checkbox"> Color Space</input>
+                <hr/>
+                <input id="monitor-outputs" type="checkbox"> Monitor Outputs</input>
+                <hr class="hr-group"/>
+                <input id="monitor-output-settings" class="cables" type="checkbox"> Framelines, Colors, Display Info</input>
+                <hr/>
+                <input id="user-buttons" type="checkbox"> User Buttons</input>
+                <hr/>
+                <input id="cable-management" type="checkbox"> Cable Management</input>
+            </div>
+            <div class="prep-form-section">
+                <h4 class="prep-section-title">3. Lenses</h4>
+                <hr style="margin-top: 12px; margin-bottom: 12px;"/>
+                <input id="tape-distances" type="checkbox"> Tape out distances if necessary</input>
+                <hr/>
+                <input id="check-primes" type="checkbox"> Check Lenses</input>
+                <hr class="hr-group"/>
+                <input id="primes" class="cables" type="checkbox"> Primes</input>
+                <hr class="hr-group"/>
+                <input id="primes-program-fiz" class="cables" type="checkbox"> Program FIZ</input>
+                <hr class="hr-group"/>
+                <input id="primes-mb-vignette" class="cables" type="checkbox"> Mattebox Vignette Check</input>
+                <hr/>
+                <input id="check-zooms" type="checkbox"> Rebuild Camera for Zooms</input>
+                <hr class="hr-group"/>
+                <input id="zooms-fiz-motors" class="cables" type="checkbox"> FIZ Motors/Cables</input>
+                <hr class="hr-group"/>
+                <input id="zooms-mb-vignette" class="cables" type="checkbox"> Mattebox Vignette Check</input>
+                <hr class="hr-group"/>
+                <input id="zooms-tracking" class="cables" type="checkbox"> Tracking</input>
+                <hr class="hr-group"/>
+                <input id="zooms-backfocus" class="cables" type="checkbox"> Backfocus</input>
+                <hr class="hr-group"/>
+                <input id="zooms-program-fiz" class="cables" type="checkbox"> Program FIZ</input>
+                <hr class="hr-group"/>
+                <input id="settings-color-space" class="cables" type="checkbox"> Color Space</input>
+                <hr/>
+                <input id="specialty-lenses" type="checkbox"> Specialty Lenses</input>
+                <hr class="hr-group"/>
+                <input id="specialty-support" class="cables" type="checkbox"> Support</input>
+                <hr class="hr-group"/>
+                <input id="specialty-vignette" class="cables" type="checkbox"> Vignette Check</input>
+                <hr class="hr-group"/>
+                <input id="specialty-mattebox" class="cables" type="checkbox"> Mattebox</input>
+                <hr class="hr-group"/>
+                <input id="specialty-focus" class="cables" type="checkbox"> Focus</input>
+            </div>
+        </div>
+        <div class="prep-form-column">
+            <div class="prep-form-section">
+                <h4 class="prep-section-title">4. Finishing Up</h4>
+                <hr style="margin-top: 12px; margin-bottom: 12px;"/>
+                <input id="calibrate-monitors" type="checkbox"> Calibrate Monitors</input>
+                <hr/>
+                <input id="check-filters" type="checkbox"> Check Filters</input>
+                <hr/>
+                <input id="check-lens-color" type="checkbox"> Match Lens Color with WB</input>
+                <hr/>
+                <input id="build-carts" type="checkbox"> Build and Load Carts</input>
+                <hr/>
+            </div>
+            <div class="prep-form-section">
+                <h4 class="prep-section-title">5. Get Lunch!</h4>
+                <p>...if you haven't already</p>
+                <hr style="margin-top: 12px; margin-bottom: 12px;"/>
+                <input id="gear-pickup" type="checkbox"> Coordinate with production to pickup gear</input>
+                <hr/>
+                <input id="contact-dp" type="checkbox"> Let the DP know how prep went</input>
+                <hr/>
+            </div>
+        </div>
     </form>
 </StarlightPage>
