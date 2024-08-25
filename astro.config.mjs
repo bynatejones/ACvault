@@ -24,10 +24,11 @@ export default defineConfig({
                 baseUrl: 'https://github.com/bynatejones/ACvault/edit/dev',
             },
 			sidebar: [
+                { label: 'Home', slug: '' },
                 {
 					label: 'Vault Introduction',
 					items: [
-                        { label: 'Welcome to the AC Vault!', slug: '' },
+                        { label: 'Let\'s Get Started', slug: 'v/lets-get-started' },
                         { label: 'Access the Vault Offline', slug: 'v/offline-use' },
                         { label: 'How to Contribute', slug: 'v/contribute' },
                     ]
