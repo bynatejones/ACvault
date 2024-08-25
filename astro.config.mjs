@@ -27,7 +27,7 @@ export default defineConfig({
                 {
 					label: 'Vault Introduction',
 					items: [
-                        { label: 'Welcome to the AC Vault!', slug: 'v/welcome' },
+                        { label: 'Welcome to the AC Vault!', slug: '' },
                         { label: 'Access the Vault Offline', slug: 'v/offline-use' },
                         { label: 'How to Contribute', slug: 'v/contribute' },
                     ]

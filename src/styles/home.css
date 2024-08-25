@@ -1,7 +1,22 @@
 h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 article {
     border-radius: 0.5rem;
+}
+
+/** Center body */
+.astro-67yu43on {
+    justify-content: center;
+}
+
+/** Body container full width */
+.sl-container.astro-7nkwcw3z {
+    max-width: 100%;
+}
+
+/** Hide right sidebar, next article footer, edit page footer */
+aside.right-sidebar-container.astro-67yu43on, .pagination-links.astro-u2l5gyhi, .meta.sl-flex.astro-3yyafb3n {
+    display: none;
 }
