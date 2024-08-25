@@ -24,11 +24,11 @@ export default defineConfig({
             },
 			sidebar: [
                 {
-					label: 'Introduction',
+					label: 'Vault Introduction',
 					items: [
-                        { label: 'What is the AC Vault?', slug: 'introduction/introduction' },
-                        { label: 'Access the Vault Offline', slug: 'introduction/offline-use' },
-                        { label: 'How to Contribute', slug: 'introduction/contribute' },
+                        { label: 'Welcome to the AC Vault!', slug: 'v/welcome' },
+                        { label: 'Access the Vault Offline', slug: 'v/offline-use' },
+                        { label: 'How to Contribute', slug: 'v/contribute' },
                     ]
 				},
                 {
@@ -37,7 +37,12 @@ export default defineConfig({
                         {
                             label: 'Manuals',
                             items: [
-                                { label: 'Digital Cameras', slug: 'files/digital-cameras/manuals' },
+                                { label: 'Digital Cameras', slug: 'files/manuals/digital-cameras' },
+                                { label: 'Film Cameras', slug: 'files/manuals/film-cameras' },
+                                { label: 'FIZ', slug: 'files/manuals/fiz' },
+                                { label: 'Monitors', slug: 'files/manuals/monitors' },
+                                { label: 'Support', slug: 'files/manuals/support' },
+                                { label: 'Accessories', slug: 'files/manuals/accessories' },
                             ]
                         },
                         { label: 'Checklists', slug: 'files/checklists' },
