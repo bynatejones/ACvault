@@ -1,5 +1,6 @@
 # AC Vault
 ## Resources and information for camera assistants and other crew
+### Free to use and modify under the GNU General Public License v3.0
 
 ## 🚀 Project Structure
 
