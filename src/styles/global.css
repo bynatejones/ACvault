@@ -18,16 +18,16 @@
 	--sl-color-gray-6: #17181c;
 	--sl-color-black: #17181c;
     --sl-color-bg-nav: #17181c;
-}
 
-body {
-    background: #17181c;
-    background: linear-gradient(180deg, rgba(23,24,28,1) 0%, rgba(30,31,36,1) 50%, rgba(35,37,43,1) 100%);
-}
+    body {
+        background: #17181c;
+        background: linear-gradient(180deg, rgba(23,24,28,1) 0%, rgba(30,31,36,1) 50%, rgba(35,37,43,1) 100%);
+    }
 
-#starlight__sidebar {
-    background: #17181c;
-    background: linear-gradient(180deg, rgba(23,24,28,1) 0%, rgba(30,31,36,1) 70%, rgba(35,37,43,1) 100%);
+    #starlight__sidebar {
+        background: #17181c;
+        background: linear-gradient(180deg, rgba(23,24,28,1) 0%, rgba(30,31,36,1) 70%, rgba(35,37,43,1) 100%);
+    }
 }
 
 /* mobile menu icon bg color */
@@ -50,9 +50,19 @@ starlight-menu-button button {
 	--sl-color-gray-3: #545861;
 	--sl-color-gray-4: #888b96;
 	--sl-color-gray-5: #c0c2c7;
-	--sl-color-gray-6: #eceef2;
-	--sl-color-gray-7: #f5f6f8;
+	--sl-color-gray-6: #ffffff;
+	--sl-color-gray-7: #ffffff;
 	--sl-color-black: #ffffff;
+
+    body {
+        background: #ffffff;
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(244,241,241,1) 35%, rgba(219,219,219,1) 100%);
+    }
+
+    #starlight__sidebar {
+        background: #ffffff;
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(244,241,241,1) 75%, rgba(219,219,219,1) 100%);
+    }
 }
 
 .sl-flex.astro-kmkmnagf site-search button {
